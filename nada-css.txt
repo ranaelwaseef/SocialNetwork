@@ -1,0 +1,163 @@
+
+
+.Friend{
+    margin-top: 0px;
+    margin-left:250px;
+    margin-bottom:0px;
+   width:60%;
+   height: 20%;
+background-color: menu; 
+    background-color:  #DCDCDC;
+    box-shadow: 10px 10px 5px #888888;
+          box-sizing: border-box;
+   padding-top: 10px;
+   padding-left: 40px;
+   border-radius: 10px;
+}
+.friends
+{
+     margin-top: 0px;
+    margin-left:250px;
+    margin-bottom:0px;
+   width:60%;
+   height: 20%;
+     background-color: menu;
+    	background: #DCDCDC;
+    border: 2px solid grey;
+         background-color: #ffffff;
+        opacity: 0.6;
+         filter: alpha(opacity=60); 
+    box-shadow: 10px 10px 5px #888888;
+          box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 10px;
+   padding-left: 40px;
+   border-radius: 10px;
+    
+}
+
+
+.btn3 {
+	padding: 5px;
+     font-size: 15px;
+	color: white;
+	display:block;
+	border: none;
+	border-radius: 0px;
+        text-align:center;
+        background: #3f3f40;
+        font-weight:500;
+        font-style: italic;
+        margin-top:30px;
+        margin-left:20px;
+            margin-right: 70px;
+        width: 200px;
+     
+}
+.reqbtn{
+	margin-left:100px;
+	margin-top:-5px;
+}
+
+.reqlink{
+	margin-left:60px;
+	margin-top:-40px;
+    
+    
+}
+.reqlink a:link{
+    color:#3b115b;
+}
+
+
+.msgbody
+{
+	margin-top:30px;
+	margin-left:70px;
+	font-family:serif;
+    font-size: 20px;
+	
+}
+.msg{
+    margin-top: -1px;
+    margin-left:250px;
+    margin-bottom:0px;
+   width:60%;
+   height: 25%;
+ background-color: menu;
+    	background: #DCDCDC;
+    border: 2px solid grey;
+         background-color: #ffffff;
+        opacity: 0.6;
+         filter: alpha(opacity=60); 
+  
+          box-sizing: border-box;
+    
+   padding-top: 10px;
+   padding-left: 40px;
+   border-radius: 5px;
+}
+.msg1{
+    padding-top: 10px;
+   padding-left: 40px;
+   border-radius: 5px;
+     margin-top: -5px;
+    margin-left:250px;
+    margin-bottom:0px;
+   width:60%;
+   height: 25%;
+     background-color: menu;
+    	background: #DCDCDC;
+    border: 2px solid grey;
+         background-color: #ffffff;
+        opacity: 0.6;
+         filter: alpha(opacity=60); 
+    box-shadow: 10px 10px 5px #888888;
+          box-sizing: border-box;
+    
+    
+}
+.datemsg
+{
+	float:right;
+	margin-right:25px;
+	font-style:italic ;
+	font-weight:bold;
+
+}
+.people{
+    margin-left:100px;
+    margin-top:-80;
+    margin-bottom:35px;
+    
+}
+    
+
+.bk
+{
+    
+     padding: 20px;
+     margin-top: 20px;
+     width:fit-content;
+     	border-radius: 0px 0px 0px 0px;
+      
+margin-left: 30px;
+    width:80%;
+    background-color: menu;
+    	background: #DCDCDC;
+    border: 2px solid grey;
+         background-color: #ffffff;
+        opacity: 0.6;
+         filter: alpha(opacity=60); 
+    box-shadow: 10px 10px 5px #888888;
+          box-sizing: border-box
+}
+.img-circle {
+    border-radius: 50%;
+}
+.postbody{
+	margin-left:60px;
+	margin-top:5px;
+	font-size:20px;
+	
+}

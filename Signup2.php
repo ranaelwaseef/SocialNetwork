@@ -1,21 +1,23 @@
-
+<?php include('server.php') ?>
 <html>
 <head>
 	<title>Sign Up</title>
-	<link rel="stylesheet" type="text/css" href="Style1.css">
+		<link rel="stylesheet" type="text/css" href="Style2.css">
+
 </head>
 <body>
-     
-	<div class="header">
-		<h2>Welcome</h2>
-	</div>
-    <form method="post" action="Profile.php"    enctype="multipart/form-data">
+		
+	
+    <form method="post" action="Profile.php" enctype="multipart/form-data" class="content">
        
                         <div class="input-group">
-                        
-    Select image to upload:
+                        <h2>GETTING STARTED</h2>
+    <label>Upload your profile picture now!</label>
+			<div class="imgcontainer">
+    <img src="uploadimg.jpg" alt="Avatar" class="avatar">
     <input type='file' name='file' id="fileToUpload">
     <input type="submit" value="Upload" name="upload">
+    <a href="Profile.php">Skip</a>
 
                         </div>
                     

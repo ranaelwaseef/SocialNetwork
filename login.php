@@ -3,12 +3,11 @@
 <html>
 <head>
 	<title>Login </title>
-	<link rel="stylesheet" type="text/css" href="Style1.css">
+        <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
-     <div class ="header" >
+     <div class ="header1" >
          
-         <h> Enter The Email </h>
          
     </div>
        
@@ -24,19 +23,22 @@
   </ul>
 </nav>
 </div>
-		<form method="post"  action="Server.php" class="content">
-                     <?php include('errors.php'); ?>
+    <form method="post"  action="login.php" class="content">
+                     <div class="imgcontainer">
+    <img src="loginn.png" alt="Avatar" class="avatar">
+	<br><br><br>
+					 <?php include('errors.php'); ?>
        <div class="input-group">
 			<label>Email</label>
-                        <input type="Email" name="Email" >
+                        <input type="Email" placeholder="'email@example.com'" name="Email" >
 
                     <div class="input-group">
 			<label>Password</label>
-			<input type="password" name="password">
+			<input type="password" placeholder="Your password goes here" name="password">
                         
 		
 		<div class="input-group">
-			<button type="submit" class="btn" name="Login_user">Sign in</button>
+			<button style="float:right"   type="submit" class="btn" name="Login_user">Sign in</button>
 		</div>
              
         

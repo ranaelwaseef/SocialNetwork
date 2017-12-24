@@ -1,17 +1,152 @@
 <!DOCTYPE html>
 <?php include('Server.php') ?>
 
-
 <html>
-<head>
-	<title>2</title>
-	<link rel="stylesheet" type="text/css" href="Style1.css">
+<style>
+body
+{
+	background-image: url("background.jpg");
+
+}
+
+input[type=email], input[type=password],input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+
+
+
+}
+button {
+    background-color: purple;
+    color: white;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 24px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+	opacity: 0.5;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 0px 0 20px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 10%;
+}
+
+label{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	
+}
+.header {
+
+   position: relative;
+	color: black; 
+   text-align: center;
+	border: 0px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 0px 0px 0px 0px;
+	padding: 0px;
+    background-color:#ffffff;
+    margin:   auto;
+    opacity: 0.6;
+     filter: alpha(opacity=60); 
+}
+nav {
+  position:absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+ 
+
+}
+
+ul {
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size:24px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: purple;
+}
+.content {
+	
+    width: 40%;
+	margin:   auto;
+	padding: 50px;
+	border: 1px solid #B0C4DE;
+	background: #DCDCDC;
+	border-radius: 0px 0px 50px 50px;
+         background-color: #ffffff;
+        opacity: 0.6;
+         filter: alpha(opacity=60); 
+    box-shadow: 10px 10px 5px #888888;
+          box-sizing: border-box;
+
+  
+    
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+
+
+</style>
+
+
+	<title>Sign up.</title>
      
 </head>
 <body>
      <div class ="header" >
          
-         <h> Fill The Form</h>
+         <h1> Fill The Form</h1>
          
     </div>
        
@@ -29,10 +164,11 @@
 
 	
     
-    <form method="post" action="Server.php" class="content">
+    <form method="post"  class="content">
+	<div class="imgcontainer">
+    <img src="signup.jpg" alt="Avatar" class="avatar"><br><br>
     
 
-	
         <?php include('errors.php'); ?>
                   
                     <div class="input-group">
@@ -65,9 +201,9 @@
                          
                 <div class="floatBlock">
                     
-                            <input type="radio" name="gender" value="Male" >Male  
+                            <input type="radio" name="gender" value="Male" ><label>Male</label>  
                       
-                            <input type="radio" name="gender" value="Female" >Female 
+                            <input type="radio" name="gender" value="Female" ><label>Female</label><br> 
                             </div>
                         
                                                                   
@@ -96,20 +232,22 @@
                         <input type="text" name ="HomeTown">
                     </div>
                     <div class="input-group">
-                        <label>About Me</label>
-                        <textarea  rows="4" cols="45"   name ="Aboutme ">
-                       
-                        </textarea>
+                        <label>About Me</label><br>
+                        
+                           <textarea   class = "textarea1"  name ="Aboutme">
+
+                                </textarea> 
+                    </div>
+         <div class="input-group">
+                        <label>Phone Number </label>
+                        <input type="text" name ="PhoneNo1" >
+                    </div>
+        <div class="input-group">
+                        <label>Phone Number 2 </label>
+                        <input type="text" name ="PhoneNo2" >
                     </div>
         
-                                <div class="input-group">
-                             
-                        
-                                    <label>Select image to upload </label>
-    <input type="file" name="file" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="Upload me">
-
-                        </div>
+       
                  
             <div class="input-group">
 			<button type="submit" class="btn" name="reg_user">Sign Up</button>
